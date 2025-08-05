@@ -33,11 +33,11 @@
             <!-- Left: Phone numbers -->
                 <div class="flex flex-col space-y-1 text-[#034200]">
                     <span class="flex items-center">
-                    <img src="assets/images/phone_svg.svg" alt="Phone icon" class="w-4 h-4 mr-1">
+                    <img src="Assets/images/phone_svg.svg" alt="Phone icon" class="w-4 h-4 mr-1">
                     +254 712 345 678
                     </span>
                     <span class="flex items-center">
-                    <img src="assets/images/phone_empty.svg" alt="Phone icon" class="w-4 h-4 mr-1">
+                    <img src="Assets/images/phone_empty.svg" alt="Phone icon" class="w-4 h-4 mr-1">
                     +254 712 345 679
                     </span>
                 </div>
@@ -54,11 +54,11 @@
             <!-- Left: Phone numbers -->
             <div class="flex space-x-4 text-[#034200]">
                 <span class="flex items-center">
-                <img src="assets/images/phone_svg.svg" alt="Phone icon" class="w-4 h-4 mr-1">
+                <img src="Assets/images/phone_svg.svg" alt="Phone icon" class="w-4 h-4 mr-1">
                 +254 712 345 678
                 </span>
                 <span class="flex items-center">
-                <img src="assets/images/phone_empty.svg" alt="Phone icon" class="w-4 h-4 mr-1">
+                <img src="Assets/images/phone_empty.svg" alt="Phone icon" class="w-4 h-4 mr-1">
                 +254 712 345 679
                 </span>
             </div>
@@ -156,7 +156,7 @@
             :style="`transform: translateX(-${currentSlide * 100}%)`">
             <template x-for="(slide, index) in slides" :key="index">
                 <div class="min-w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[520px]">
-                    <img :src="`Assets/images/${slide}`" alt="" class="w-full h-full object-cover rounded-lg">
+                    <img :src="`Assets/images/${slide}`" alt="" class="w-full h-full object-fit rounded-lg">
                 </div>
             </template>
         </div>

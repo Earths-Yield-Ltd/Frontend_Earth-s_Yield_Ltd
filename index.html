@@ -19,9 +19,11 @@
     <meta name="twitter:site" content="@earthsyieldltd"> <meta name="twitter:creator" content="@earthsyieldltd"> <meta name="twitter:title" content="Earth's Yield Ltd - Purely Fresh Fruits">
     <meta name="twitter:description" content="Get the freshest fruits delivered to your doorstep from Earth's Yield Ltd.">
     <meta name="twitter:image" content="https://www.earthsyieldltd.com/images/twitter-image.jpg"> <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
 
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="Assets/js/fruits.js"></script>
+</head>
+<body >
     <!-- Info Row -->
     <div class="bg-white py-2">
         <div class="container mx-auto px-4">
@@ -29,28 +31,28 @@
             <!-- Mobile View -->
             <div class="flex justify-between lg:hidden">
             <!-- Left: Phone numbers -->
-            <div class="flex flex-col space-y-1">
-                <span class="flex items-center">
-                <img src="assets/images/phone_svg.svg" alt="Phone icon" class="w-4 h-4 mr-1">
-                +254 712 345 678
-                </span>
-                <span class="flex items-center">
-                <img src="assets/images/phone_empty.svg" alt="Phone icon" class="w-4 h-4 mr-1">
-                +254 712 345 679
-                </span>
-            </div>
+                <div class="flex flex-col space-y-1 text-[#034200]">
+                    <span class="flex items-center">
+                    <img src="assets/images/phone_svg.svg" alt="Phone icon" class="w-4 h-4 mr-1">
+                    +254 712 345 678
+                    </span>
+                    <span class="flex items-center">
+                    <img src="assets/images/phone_empty.svg" alt="Phone icon" class="w-4 h-4 mr-1">
+                    +254 712 345 679
+                    </span>
+                </div>
 
-            <!-- Right: Tagline below numbers -->
-            <div class="flex flex-col justify-end text-[#034200] text-lg font-medium text-right">
-                <span>Purely Fresh,</span>
-                <span>Purely Yours</span>
-            </div>
+                <!-- Right: Tagline below numbers -->
+                <div class="flex flex-col justify-end text-[#034200] text-lg font-medium text-right">
+                    <span>Purely Fresh,</span>
+                    <span>Purely Yours</span>
+                </div>
             </div>
 
             <!-- Desktop View -->
             <div class="hidden lg:flex items-center justify-between">
             <!-- Left: Phone numbers -->
-            <div class="flex space-x-4">
+            <div class="flex space-x-4 text-[#034200]">
                 <span class="flex items-center">
                 <img src="assets/images/phone_svg.svg" alt="Phone icon" class="w-4 h-4 mr-1">
                 +254 712 345 678
@@ -145,22 +147,20 @@
         </div>
     </nav>
 
-    <!-- Hero section -->
+    <!-- hero section -->
     <section x-data="{ currentSlide: 0, slides: ['hero_banner_one.webp', 'hero_banner_one.webp', 'hero_banner_one.webp'] }" 
-            x-init="setInterval(() => { currentSlide = (currentSlide + 1) % slides.length }, 5000)" 
-            class="relative w-full overflow-hidden mx-4 sm:mx-6 md:mx-8 lg:mx-12">
+         x-init="setInterval(() => { currentSlide = (currentSlide + 1) % slides.length }, 5000)" 
+         class="relative w-full overflow-hidden">
 
-        <!-- Slides -->
         <div class="flex transition-transform duration-700 ease-in-out"
             :style="`transform: translateX(-${currentSlide * 100}%)`">
             <template x-for="(slide, index) in slides" :key="index">
                 <div class="min-w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[520px]">
-                    <img :src="`Assets/images/${slide}`" alt="" class="w-full h-full object-fit rounded-lg">
+                    <img :src="`Assets/images/${slide}`" alt="" class="w-full h-full object-cover rounded-lg">
                 </div>
             </template>
         </div>
 
-        <!-- Dots -->
         <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
             <template x-for="(slide, index) in slides" :key="index">
                 <button 
@@ -175,8 +175,16 @@
         </div>
     </section>
 
+    <!-- Main Body Section -->
+    <div class="flex flex-col md:flex-row gap-6 p-4">
+        <!-- Sidebar -->
+        <aside id="categoryList" class="w-full md:w-1/4"></aside>
+
+        <!-- Main content -->
+        <main id="fruitCards" class="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></main>
+    </div>
 
 
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    
 </body>
 </html>

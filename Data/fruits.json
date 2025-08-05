@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Fruits And Vegetables",
+    "icon": "Assets/images/icons/fruits&vegetables.svg",
+    "items": [
+      {
+        "name": "Oranges",
+        "image": "Assets/images/fresh_oranges.webp",
+        "description": "Crisp and sweet red apples.",
+        "price": "55 KES"
+      },
+      {
+        "name": "Bananas",
+        "image": "Assets/images/bananas.webp",
+        "description": "Rich in potassium and flavor.",
+        "price": "40 KES"
+      },
+      {
+        "name": "Grapes",
+        "image": "Assets/images/grapes.webp",
+        "description": "Juicy and refreshing.",
+        "price": "70 KES"
+      },
+      {
+        "name": "Ovacados",
+        "image": "Assets/images/ovacados.webp",
+        "description": "Sweet and soft delight.",
+        "price": "60 KES"
+      },
+      {
+        "name": "Papaya",
+        "image": "Assets/images/pawpaw.webp",
+        "description": "Nutritious and flavorful.",
+        "price": "35 KES"
+      },
+      {
+        "name": "Grapes",
+        "image": "Assets/images/grapes.webp",
+        "description": "Perfect for snacks and juicing.",
+        "price": "78 KES"
+      }
+    ]
+  },
+  {
+    "name": "Dairy And Eggs",
+    "icon": "Assets/images/icons/daily&eggs.svg",
+    "items": [
+      {
+        "name": "Pineapple",
+        "image": "Assets/images/pineapple.webp",
+        "description": "Tangy and tropical treat.",
+        "price": "85 KES"
+      },
+      {
+        "name": "Ovacados",
+        "image": "Assets/images/ovacados.webp",
+        "description": "Sweet and soft delight.",
+        "price": "60 KES"
+      },
+      {
+        "name": "Papaya",
+        "image": "Assets/images/pawpaw.webp",
+        "description": "Nutritious and flavorful.",
+        "price": "35 KES"
+      },
+      {
+        "name": "Grapes",
+        "image": "Assets/images/grapes.webp",
+        "description": "Perfect for snacks and juicing.",
+        "price": "78 KES"
+      },
+      {
+        "name": "Oranges",
+        "image": "Assets/images/fresh_oranges.webp",
+        "description": "Red and delicious.",
+        "price": "49 KES"
+      },
+      {
+        "name": "Sweet melon",
+        "image": "Assets/images/sweet_melon.webp",
+        "description": "Summer’s favorite fruit.",
+        "price": "62 KES"
+      }
+    ]
+  },
+  {
+    "name": "Meat And Poultry",
+    "icon": "Assets/images/icons/meat.svg",
+    "items": [
+      {
+        "name": "Grapes",
+        "image": "Assets/images/grapes.webp",
+        "description": "Perfect for snacks and juicing.",
+        "price": "78 KES"
+      },
+      {
+        "name": "Oranges",
+        "image": "Assets/images/fresh_oranges.webp",
+        "description": "Red and delicious.",
+        "price": "49 KES"
+      },
+      {
+        "name": "Sweet melon",
+        "image": "Assets/images/sweet_melon.webp",
+        "description": "Summer’s favorite fruit.",
+        "price": "62 KES"
+      },
+       {
+        "name": "Pineapple",
+        "image": "Assets/images/pineapple.webp",
+        "description": "Tangy and tropical treat.",
+        "price": "85 KES"
+      },
+      {
+        "name": "Ovacados",
+        "image": "Assets/images/ovacados.webp",
+        "description": "Sweet and soft delight.",
+        "price": "60 KES"
+      },
+      {
+        "name": "Papaya",
+        "image": "Assets/images/pawpaw.webp",
+        "description": "Nutritious and flavorful.",
+        "price": "35 KES"
+      }
+    ]
+  }
+]
